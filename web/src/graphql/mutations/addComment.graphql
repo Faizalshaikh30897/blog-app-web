@@ -1,0 +1,5 @@
+mutation AddComment($text: String!, $postId: Int, $parentId: Int) {
+  addComment(text: $text, parentId: $parentId, postId: $postId) {
+    ...RegularComment
+  }
+}

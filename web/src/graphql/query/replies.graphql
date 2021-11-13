@@ -1,0 +1,8 @@
+query Replies($commentId: Int!) {
+  comment(commentId: $commentId) {
+    ...RegularComment
+    childComments {
+      ...RegularChildComment
+    }
+  }
+}

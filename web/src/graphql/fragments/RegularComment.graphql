@@ -1,0 +1,12 @@
+fragment RegularComment on UserComment {
+  text
+  userId
+  user {
+    id
+    username
+  }
+  postId
+  parentCommentId
+  id
+  createdAt
+}
